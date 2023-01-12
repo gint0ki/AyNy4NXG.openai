@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>OpenAI Example</title>
+    <title>OpenAI</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>OpenAI Example</h1>
-    <form>
-      <label for="prompt">Enter your text:</label>
-      <input type="text" id="prompt" name="prompt">
-      <button type="button" onclick="generateResponse(document.getElementById('prompt').value)">Generate Response</button>
-    </form>
-    <div id="response"></div>
-
+    <div class="container">
+      <h1 class="title">ChatGPT-3</h1>
+      <form>
+        <label for="prompt">Enter your text:</label>
+        <input type="text" id="prompt" name="prompt" class="input-text">
+        <button type="button" class="generate-button" onclick="generateResponse(document.getElementById('prompt').value)">Generate Response</button>
+      </form>
+      <div class="response-box" id="response"></div>
+    </div>
     <script src="openai.js"></script>
   </body>
 </html>

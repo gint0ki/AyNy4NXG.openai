@@ -16,6 +16,8 @@ function generateResponse(prompt) {
             console.log(error);
         } else {
             console.log(response.choices[0].text);
+            document.getElementById("response").textContent = response.choices[0].text;
         }
     });
 }
+
