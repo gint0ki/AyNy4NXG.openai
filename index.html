@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OpenAI Example</title>
+  </head>
+  <body>
+    <h1>OpenAI Example</h1>
+    <form>
+      <label for="prompt">Enter your text:</label>
+      <input type="text" id="prompt" name="prompt">
+      <button type="button" onclick="generateResponse(document.getElementById('prompt').value)">Generate Response</button>
+    </form>
+    <div id="response"></div>
+
+    <script src="openai.js"></script>
+  </body>
+</html>
